@@ -1,0 +1,25 @@
+{
+  "name": "gtec-education-ottappalam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official production website for G-TEC Education, Ottappalam, Kerala, India.",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "serve": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
+    "build": "echo 'Production ready static ESM site. No compilation needed.'"
+  },
+  "keywords": [
+    "gtec",
+    "g-tec education",
+    "ottappalam",
+    "kerala",
+    "software courses",
+    "cad",
+    "multimedia",
+    "accounting"
+  ],
+  "author": "G-TEC Education Ottappalam",
+  "license": "UNLICENSED"
+}
