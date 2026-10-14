@@ -1,6 +1,6 @@
 /**
  * G-TEC Education Ottappalam - Standalone Production Bundle
- * Automatically bundled for seamless execution across both HTTP and local file:// protocols.
+ * Universal standalone execution for web hosts, GitHub Pages and local files.
  */
 (() => {
 
@@ -1086,6 +1086,7 @@ function renderAboutSection() {
 
 
 
+
 function renderCourseCategorySection() {
   return `
     <section class="section section-white" id="courses" aria-label="Official Course Catalogue">
@@ -1119,7 +1120,7 @@ function renderCourseCategorySection() {
               type="button" 
               class="tab-btn ${idx === 1 ? 'active' : ''}" 
               role="tab" 
-              aria-selected="${idx === 1 ? 'true' }" 
+              aria-selected="${idx === 1 ? 'true' : 'false'}" 
               data-category="${cat.id}"
               id="tab-${cat.id}"
               aria-controls="panel-${cat.id}"
@@ -1343,7 +1344,7 @@ function initCourseSection() {
       });
       btn.classList.add('active');
       btn.setAttribute('aria-selected', 'true');
-      const cat = btn.getAttribute('data-category') as 'cad' | 'software' | 'multimedia' | 'accounting';
+      const cat = btn.getAttribute('data-category');
       if (cat) {
         currentCategory = cat;
         updateCategoryEditorial(currentCategory);
@@ -1423,10 +1424,10 @@ function initCourseDetailModal() {
   const whatsappBtn = document.getElementById('modal-whatsapp-btn') ;
   const enquireBtn = document.getElementById('modal-enquire-btn');
 
-  let currentSelectedCourse | null = null;
+  let currentSelectedCourse = null;
 
   // Window global function to trigger modal from any card
-  (window ).openCourseDetails = (courseId) => {
+  window.openCourseDetails = (courseId) => {
     const course = getCourseById(courseId);
     if (!course || !dialog) return;
 
@@ -1734,7 +1735,7 @@ function renderStudentGallery() {
               class="tab-btn ${idx === 0 ? 'active' : ''}" 
               data-filter="${cat.id}"
               role="tab"
-              aria-selected="${idx === 0 ? 'true' }"
+              aria-selected="${idx === 0 ? 'true' : 'false'}"
             >
               ${cat.label}
             </button>
@@ -2467,21 +2468,23 @@ function initApp() {
   const appContainer = document.getElementById('app');
   if (!appContainer) return;
 
-  // Mount Application Shell
-  appContainer.innerHTML = `
-    ${renderHeader()}
-    <main id="main-content">
-      ${renderHeroSection()}
-      ${renderAboutSection()}
-      ${renderCourseCategorySection()}
-      ${renderCampusSection()}
-      ${renderStudentGallery()}
-      ${renderEnquiryForm()}
-      ${renderContactSection()}
-    </main>
-    ${renderFooter()}
-    ${renderCourseDetailModal()}
-  `;
+  // Mount Application Shell if not pre-rendered
+  if (appContainer.children.length === 0) {
+    appContainer.innerHTML = `
+      ${renderHeader()}
+      <main id="main-content">
+        ${renderHeroSection()}
+        ${renderAboutSection()}
+        ${renderCourseCategorySection()}
+        ${renderCampusSection()}
+        ${renderStudentGallery()}
+        ${renderEnquiryForm()}
+        ${renderContactSection()}
+      </main>
+      ${renderFooter()}
+      ${renderCourseDetailModal()}
+    `;
+  }
 
   // Initialize Component Interactivity
   initHeader();
@@ -2553,10 +2556,12 @@ function initActiveNavObserver() {
 }
 
 // Auto-boot on DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initApp);
-} else {
-  initApp();
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+  } else {
+    initApp();
+  }
 }
 
 

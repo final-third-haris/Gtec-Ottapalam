@@ -119,7 +119,1139 @@
   </a>
 
   <!-- Application Mount Container -->
-  <div id="app"></div>
+  <div id="app">
+<header class="site-header" id="site-header">
+      <div class="container header-container">
+        <!-- Logo -->
+        <a href="#hero" class="brand-link" aria-label="G-TEC Education Ottappalam Home">
+          <img 
+            src="./images/brand/gtec-logo.png" 
+            alt="G-TEC Education Ottappalam Logo" 
+            class="brand-logo-img"
+            width="180" 
+            height="44"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Primary Navigation" class="nav-desktop-wrapper">
+          <ul class="nav-desktop">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
+            <li><a href="#campus" class="nav-link">Campus</a></li>
+            <li><a href="#gallery" class="nav-link">Student Work</a></li>
+            <li><a href="#enquiry" class="nav-link">Admissions</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Quick Action / CTA -->
+        <div class="header-cta-group">
+          <a href="https://wa.me/916238843939" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm hide-mobile" aria-label="Chat on WhatsApp with G-TEC Ottappalam">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.12-.533-1.821-.756-2.986-2.614-3.076-2.735-.09-.12-0.739-.983-.739-1.874 0-.891.468-1.328.635-1.507.167-.179.366-.224.488-.224.122 0 .245.002.35.008.113.006.262-.042.411.314.155.371.531 1.296.577 1.39.046.094.077.204.015.327-.061.123-.092.199-.183.307-.091.107-.193.24-.276.323-.092.092-.188.193-.081.378.107.184.475.786 1.021 1.272.703.627 1.296.822 1.48.914.184.092.292.077.4-.046.108-.123.461-.537.584-.722.123-.184.246-.154.414-.092.169.062 1.07.505 1.254.597.184.092.307.138.353.215.046.077.046.447-.098.852z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="#enquiry" class="btn btn-primary btn-sm">
+            Enquire Now
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+      <div class="drawer-top">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+          <img src="./images/brand/gtec-logo.png" alt="G-TEC Logo" style="height: 38px; width: auto;" />
+          <button type="button" class="modal-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+        </div>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem;">
+          <li><a href="#hero" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">About</a></li>
+          <li><a href="#courses" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Courses</a></li>
+          <li><a href="#campus" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Campus</a></li>
+          <li><a href="#gallery" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Student Work</a></li>
+          <li><a href="#enquiry" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Admissions</a></li>
+          <li><a href="#contact" class="mobile-nav-link" style="font-size: 1.15rem; font-weight: 700; text-decoration: none; color: var(--color-text-primary);">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-bottom" style="border-top: 1px solid var(--color-border); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="tel:+919995955501" class="btn btn-secondary btn-sm" style="width: 100%;">
+          Call: +91 99959 55501
+        </a>
+        <a href="https://wa.me/916238843939" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" style="width: 100%;">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </aside>
+  
+<main id="main-content">
+  
+    <section class="hero-section" id="hero" aria-label="Introduction to G-TEC Education Ottappalam">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Editorial Headline & Actions -->
+          <div class="hero-content reveal-item">
+            <div class="hero-tagline">
+              <span class="editorial-tag">OTTAPPALAM, KERALA</span>
+            </div>
+
+            <h1 class="hero-title">
+              LEARN.<br />
+              <span class="text-red">CREATE.</span><br />
+              BECOME.
+            </h1>
+
+            <p class="hero-subtitle">
+              Build skills for a digital world. Practical, industry-certified education in Software Development, CAD Engineering, Multimedia, and Corporate Accounting.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary">
+                <span>Explore Courses</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#enquiry" class="btn btn-secondary">
+                <span>Enquire Now</span>
+              </a>
+            </div>
+
+            <!-- Meta Strip -->
+            <div class="hero-meta-strip">
+              <div class="meta-item">
+                <span class="meta-label">Campus Centre</span>
+                <span class="meta-value">JRJ Complex, Ottappalam</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Accreditation</span>
+                <span class="meta-value">Global IT & SAP Certifications</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Direct Line</span>
+                <span class="meta-value">+91 99959 55501</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Real Campus Photography Composition -->
+          <div class="hero-visual-wrapper reveal-item" style="transition-delay: 0.15s;">
+            <div class="hero-main-card">
+              <img 
+                src="./images/campus/reception-lounge.jpg" 
+                alt="G-TEC Education Ottappalam Reception Lounge and Counseling Desk" 
+                class="hero-img-cover"
+                fetchpriority="high"
+                decoding="async"
+                width="800"
+                height="600"
+              />
+              <div class="hero-badge-overlay">
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-accent-red); font-weight: 700; display: block;">
+                    Official Campus
+                  </span>
+                  <strong style="font-size: 0.95rem; color: var(--color-text-primary); font-weight: 700;">
+                    G-TEC Education Ottappalam
+                  </strong>
+                </div>
+                <a href="#campus" class="btn btn-white btn-sm" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+                  View Centre &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Animated Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+        <span>Scroll</span>
+        <div class="scroll-line" aria-hidden="true"></div>
+      </a>
+    </section>
+  
+  
+    <section class="section section-secondary border-t-subtle border-b-subtle" id="about" aria-label="About G-TEC Education Ottappalam">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- Left Column: Editorial Copy -->
+          <div class="about-content reveal-item">
+            <div style="margin-bottom: 1.25rem;">
+              <span class="editorial-tag">About The Centre</span>
+            </div>
+
+            <h2 class="about-headline">
+              SKILLS THAT TURN CREATIVITY INTO POSSIBILITY.
+            </h2>
+
+            <div class="about-body">
+              <p>
+                G-TEC Education, Ottappalam is a premier regional learning centre located at JRJ Complex on Thozhupadam–Ottappalam Road. We provide hands-on training across software development, computer-aided design (CAD), multimedia arts, and corporate financial accounting.
+              </p>
+              <p>
+                Our learning environment bridges theoretical fundamentals with direct practical laboratory practice. From full-stack coding to architectural BIM modeling, graphic publishing, and enterprise SAP solutions, students gain authentic skills designed for modern career pathways.
+              </p>
+              <p>
+                Every program adheres strictly to the standardized curriculum of the global G-TEC network, ensuring structured module delivery, certified faculty guidance, and direct project mentoring.
+              </p>
+            </div>
+
+            <div style="margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center;">
+              <a href="#courses" class="btn btn-primary">
+                Explore Curriculum &rarr;
+              </a>
+              <a href="https://maps.app.goo.gl/fbnyT27gH3FD3fjV9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Visit Centre in Ottappalam
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Asymmetric Photo Grid with Real Institute Photos -->
+          <div class="about-photogrid reveal-item" style="transition-delay: 0.15s;">
+            <!-- Prominent Campus Lab Photo -->
+            <div class="about-photo-item featured">
+              <img 
+                src="./images/campus/training-lab-wide.jpg" 
+                alt="G-TEC Ottappalam Computer Training Laboratory with active students" 
+                loading="lazy"
+                decoding="async"
+                width="640" 
+                height="800"
+              />
+              <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); padding: 0.75rem 1rem; border-radius: 4px; border: 1px solid var(--color-border);">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-accent-red); font-weight: 700; text-transform: uppercase; display: block;">
+                  Interactive Lab Pods
+                </span>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-primary);">
+                  Individual workstation learning at Ottappalam
+                </span>
+              </div>
+            </div>
+
+            <!-- Secondary Detail Photo -->
+            <div class="about-photo-item secondary">
+              <img 
+                src="./images/campus/students-learning.jpg" 
+                alt="Students engaged in computer training session" 
+                loading="lazy"
+                decoding="async"
+                width="400" 
+                height="320"
+              />
+            </div>
+
+            <!-- Additional Detail Photo -->
+            <div class="about-photo-item secondary">
+              <img 
+                src="./images/campus/student-workstation.jpg" 
+                alt="Student analyzing spreadsheet calculations at workstation" 
+                loading="lazy"
+                decoding="async"
+                width="400" 
+                height="320"
+              />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  
+  
+    <section class="section section-white" id="courses" aria-label="Official Course Catalogue">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="courses-header reveal-item">
+          <div style="margin-bottom: 1rem;">
+            <span class="editorial-tag">Official Course Catalogue</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem;">
+            <div>
+              <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05;">
+                FIND YOUR FIELD.
+              </h2>
+              <p style="color: var(--color-text-secondary); max-width: 580px; margin-top: 0.75rem; font-size: 1.05rem;">
+                Explore verified curricula across four core technical disciplines taught at G-TEC Education Ottappalam.
+              </p>
+            </div>
+            
+            <a href="https://www.gteceducation.com/courses/software" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View G-TEC official central course directory">
+              <span>Official Global Catalogue &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Category Tabs Navigation -->
+        <div class="category-tabs-nav reveal-item" role="tablist" aria-label="Course Categories">
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              role="tab" 
+              aria-selected="false" 
+              data-category="cad"
+              id="tab-cad"
+              aria-controls="panel-cad"
+            >
+              <span class="tab-num">01</span>
+              <span>CAD</span>
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn active" 
+              role="tab" 
+              aria-selected="true" 
+              data-category="software"
+              id="tab-software"
+              aria-controls="panel-software"
+            >
+              <span class="tab-num">02</span>
+              <span>Software Development</span>
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              role="tab" 
+              aria-selected="false" 
+              data-category="multimedia"
+              id="tab-multimedia"
+              aria-controls="panel-multimedia"
+            >
+              <span class="tab-num">03</span>
+              <span>Multimedia</span>
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              role="tab" 
+              aria-selected="false" 
+              data-category="accounting"
+              id="tab-accounting"
+              aria-controls="panel-accounting"
+            >
+              <span class="tab-num">04</span>
+              <span>Accounting</span>
+            </button>
+          
+        </div>
+
+        <!-- Category Editorial Hero Card (Dynamic Content populated via JS) -->
+        <div id="category-editorial-display" class="reveal-item">
+          <!-- Default will be populated in init -->
+        </div>
+
+        <!-- Course Controls Filter & Search Bar -->
+        <div class="course-controls-bar reveal-item">
+          <div class="search-box-wrapper">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="course-search-input" 
+              class="search-input" 
+              placeholder="Search course title, syllabus or tool (e.g. Python, AutoCAD, Tally, Revit, Blender)..."
+              aria-label="Search courses"
+            />
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-secondary); text-transform: uppercase;">
+              Showing: <strong id="course-count-indicator" style="color: var(--color-text-primary);">0</strong> Courses
+            </span>
+          </div>
+        </div>
+
+        <!-- Courses Cards Grid -->
+        <div class="courses-grid" id="courses-grid-container" aria-live="polite">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+      </div>
+    </section>
+  
+  
+    <section class="section section-secondary border-t-subtle border-b-subtle" id="campus" aria-label="G-TEC Ottappalam Campus and Learning Experience">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="campus-header reveal-item">
+          <div style="margin-bottom: 1rem;">
+            <span class="editorial-tag">Campus Infrastructure</span>
+          </div>
+          <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 1rem;">
+            AUTHENTIC LEARNING SPACES.
+          </h2>
+          <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.65;">
+            Inspect genuine photographs of our Ottappalam centre at JRJ Complex. Modern computer laboratories, individual student workstations, and career counselling suites designed for deep technical immersion.
+          </p>
+        </div>
+
+        <!-- Editorial Masonry Grid of Genuine Campus Photos -->
+        <div class="campus-masonry-grid">
+          
+          <!-- Card 1: Reception & Counselling Desk (Wide 8-columns) -->
+          <article class="campus-card col-8 reveal-item">
+            <div class="campus-card-img-wrap">
+              <img 
+                src="./images/campus/reception-lounge.jpg" 
+                alt="Reception lounge, counselling desk, award trophy display, and illuminated G-TEC branding at Ottappalam" 
+                loading="lazy"
+                decoding="async"
+                width="800" 
+                height="450"
+              />
+            </div>
+            <div class="campus-card-caption">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent-red); font-weight: 700; display: block; margin-bottom: 0.35rem;">
+                    Front Office & Academic Advisory
+                  </span>
+                  <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.4rem;">
+                    Reception & Student Counselling Lounge
+                  </h3>
+                  <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55;">
+                    Welcoming front office where course advisors guide students through curriculum choices, career roadmaps, and certification paths.
+                  </p>
+                </div>
+                <span class="meta-pill" style="white-space: nowrap;">JRJ Complex 2nd Floor</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Interactive Student Workstation (4-columns) -->
+          <article class="campus-card col-4 reveal-item" style="transition-delay: 0.1s;">
+            <div class="campus-card-img-wrap">
+              <img 
+                src="./images/campus/student-workstation.jpg" 
+                alt="Student actively analyzing spreadsheet calculations on desktop monitor in G-TEC Ottappalam lab" 
+                loading="lazy"
+                decoding="async"
+                width="400" 
+                height="450"
+              />
+            </div>
+            <div class="campus-card-caption">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent-red); font-weight: 700; display: block; margin-bottom: 0.35rem;">
+                Hands-on Practice
+              </span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.4rem;">
+                Dedicated Computer Terminals
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.55;">
+                Every student receives dedicated terminal time for software, accounting, and CAD exercises.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Training Lab Wide Overview (6-columns) -->
+          <article class="campus-card col-6 reveal-item">
+            <div class="campus-card-img-wrap">
+              <img 
+                src="./images/campus/training-lab-wide.jpg" 
+                alt="Main computer laboratory at G-TEC Ottappalam with students and lab mentor" 
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="350"
+              />
+            </div>
+            <div class="campus-card-caption">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent-red); font-weight: 700; display: block; margin-bottom: 0.35rem;">
+                Laboratory Environment
+              </span>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.4rem;">
+                Main Computer Training Laboratory
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55;">
+                Air-conditioned training lab equipped with networked systems, individual partitions, and continuous faculty supervision.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Collaborative Practice Pods (6-columns) -->
+          <article class="campus-card col-6 reveal-item" style="transition-delay: 0.1s;">
+            <div class="campus-card-img-wrap">
+              <img 
+                src="./images/campus/students-coding-lab.jpg" 
+                alt="Students collaborating at computer workstations during coding and office application practice" 
+                loading="lazy"
+                decoding="async"
+                width="600" 
+                height="350"
+              />
+            </div>
+            <div class="campus-card-caption">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-accent-red); font-weight: 700; display: block; margin-bottom: 0.35rem;">
+                Collaborative Sessions
+              </span>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.4rem;">
+                Focused Project Development
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55;">
+                Students complete real coursework assignments, from graphic design outputs to full-stack code and financial ledgers.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Campus CTA Link -->
+        <div class="reveal-item" style="margin-top: 3.5rem; text-align: center;">
+          <a href="https://maps.app.goo.gl/fbnyT27gH3FD3fjV9" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Explore our centre on Google Maps">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Explore Our Centre</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  
+  
+    <section class="section section-white" id="gallery" aria-label="Student Work and Creative Gallery">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="reveal-item" style="margin-bottom: 3rem;">
+          <div style="margin-bottom: 1rem;">
+            <span class="editorial-tag">Creative Showcase</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem;">
+            <div>
+              <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05;">
+                MADE WHILE LEARNING.
+              </h2>
+              <p style="color: var(--color-text-secondary); max-width: 600px; margin-top: 0.75rem; font-size: 1.05rem;">
+                A portfolio of real training milestones, practical studio outputs, and laboratory assignments completed by students across our technical disciplines.
+              </p>
+            </div>
+            
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-text-light); text-transform: uppercase;">
+              Studio Practice & Campus Highlights
+            </span>
+          </div>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="gallery-nav reveal-item" role="tablist" aria-label="Gallery Categories">
+          
+            <button 
+              type="button" 
+              class="tab-btn active" 
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All Works
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              data-filter="graphic-design"
+              role="tab"
+              aria-selected="false"
+            >
+              Graphic Design
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              data-filter="video-editing"
+              role="tab"
+              aria-selected="false"
+            >
+              Video Editing
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              data-filter="multimedia"
+              role="tab"
+              aria-selected="false"
+            >
+              3D & Multimedia
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              data-filter="technical-projects"
+              role="tab"
+              aria-selected="false"
+            >
+              Technical Projects
+            </button>
+          
+            <button 
+              type="button" 
+              class="tab-btn " 
+              data-filter="activities"
+              role="tab"
+              aria-selected="false"
+            >
+              Institute Life
+            </button>
+          
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-items-container" aria-live="polite">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </section>
+  
+  
+    <section class="section section-secondary border-t-subtle" id="enquiry" aria-label="Admissions and Course Enquiry">
+      <div class="container">
+        
+        <div class="enquiry-grid">
+          
+          <!-- Left Column: Editorial Information & Direct WhatsApp Option -->
+          <div class="enquiry-editorial reveal-item">
+            <div style="margin-bottom: 1rem;">
+              <span class="editorial-tag">Admissions & Guidance</span>
+            </div>
+
+            <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 1.5rem;">
+              YOUR NEXT CHAPTER<br />STARTS HERE.
+            </h2>
+
+            <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.65; margin-bottom: 2rem;">
+              Whether you are preparing for a career in software engineering, architectural CAD design, creative multimedia, or corporate accounting, our academic counsellors are available to guide you.
+            </p>
+
+            <div style="background: var(--color-bg-white); border: 1px solid var(--color-border); border-radius: 8px; padding: 1.75rem; margin-bottom: 2rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <span style="display: flex; width: 10px; height: 10px; border-radius: 50%; background: #25D366;"></span>
+                <strong style="color: var(--color-text-primary); font-size: 1rem;">
+                  Instant WhatsApp Admission Line
+                </strong>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 1.25rem;">
+                Prefer immediate messaging? Contact our admissions officer directly via WhatsApp for quick batch schedules and course fee details.
+              </p>
+              <a href="https://wa.me/916238843939" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm" id="whatsapp-direct-link" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.12-.533-1.821-.756-2.986-2.614-3.076-2.735-.09-.12-0.739-.983-.739-1.874 0-.891.468-1.328.635-1.507.167-.179.366-.224.488-.224.122 0 .245.002.35.008.113.006.262-.042.411.314.155.371.531 1.296.577 1.39.046.094.077.204.015.327-.061.123-.092.199-.183.307-.091.107-.193.24-.276.323-.092.092-.188.193-.081.378.107.184.475.786 1.021 1.272.703.627 1.296.822 1.48.914.184.092.292.077.4-.046.108-.123.461-.537.584-.722.123-.184.246-.154.414-.092.169.062 1.07.505 1.254.597.184.092.307.138.353.215.046.077.046.447-.098.852z"/>
+                </svg>
+                <span>Chat on WhatsApp (+91 62388 43939)</span>
+              </a>
+            </div>
+
+            <div style="font-size: 0.88rem; color: var(--color-text-light);">
+              <p>Telephone: <a href="tel:+919995955501" style="color: var(--color-text-primary); font-weight: 700; text-decoration: none;">+91 99959 55501</a></p>
+              <p>Email: <a href="mailto:ottappalam.pkd@gteceducation.com" style="color: var(--color-text-primary); text-decoration: none;">ottappalam.pkd@gteceducation.com</a></p>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="enquiry-card reveal-item" style="transition-delay: 0.1s;">
+            <form id="admissions-enquiry-form" novalidate>
+              
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="form-name" class="form-label">
+                  Full Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="form-name" 
+                  name="fullName" 
+                  class="form-control" 
+                  placeholder="Enter your full name" 
+                  required 
+                  autocomplete="name"
+                  aria-describedby="name-feedback"
+                />
+                <div class="form-feedback" id="name-feedback"></div>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="form-phone" class="form-label">
+                  Contact Phone Number <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="form-phone" 
+                  name="phoneNumber" 
+                  class="form-control" 
+                  placeholder="e.g. 9876543210" 
+                  required 
+                  autocomplete="tel"
+                  aria-describedby="phone-feedback"
+                />
+                <div class="form-feedback" id="phone-feedback"></div>
+              </div>
+
+              <!-- Email (Optional) -->
+              <div class="form-group">
+                <label for="form-email" class="form-label">
+                  Email Address <span style="font-size: 0.75rem; text-transform: lowercase; color: var(--color-text-light);">(optional)</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="form-email" 
+                  name="email" 
+                  class="form-control" 
+                  placeholder="e.g. name@example.com" 
+                  autocomplete="email"
+                  aria-describedby="email-feedback"
+                />
+                <div class="form-feedback" id="email-feedback"></div>
+              </div>
+
+              <!-- Course Category -->
+              <div class="form-group">
+                <label for="form-category" class="form-label">
+                  Course Category <span class="required" aria-hidden="true">*</span>
+                </label>
+                <select id="form-category" name="category" class="form-control" required aria-describedby="category-feedback">
+                  <option value="">Select a category...</option>
+                  
+                    <option value="cad">CAD & Engineering Design</option>
+                  
+                    <option value="software">Software Development & Computing</option>
+                  
+                    <option value="multimedia">Multimedia & Visual Arts</option>
+                  
+                    <option value="accounting">Accounting & Business Management</option>
+                  
+                </select>
+                <div class="form-feedback" id="category-feedback"></div>
+              </div>
+
+              <!-- Specific Course of Interest -->
+              <div class="form-group">
+                <label for="form-course" class="form-label">
+                  Course of Interest <span class="required" aria-hidden="true">*</span>
+                </label>
+                <select id="form-course" name="courseId" class="form-control" required aria-describedby="course-feedback">
+                  <option value="">Select a course...</option>
+                  
+                    <option value="cad-revit-architecture" data-category="cad">Certificate Course in Revit Architecture (CAD)</option>
+                  
+                    <option value="cad-solidworks" data-category="cad">Certificate Course in Solidworks (CAD)</option>
+                  
+                    <option value="cad-autocad-electrical" data-category="cad">Certificate Course in AutoCAD Electrical (CAD)</option>
+                  
+                    <option value="cad-catia" data-category="cad">Certificate Course in Catia (CAD)</option>
+                  
+                    <option value="cad-staad-pro" data-category="cad">Certificate Course in Staad-Pro (CAD)</option>
+                  
+                    <option value="cad-g-draughtsman" data-category="cad">G- Draughtsman (CAD)</option>
+                  
+                    <option value="sw-python-fullstack" data-category="software">Full-Stack Web Developer - Python (Software)</option>
+                  
+                    <option value="sw-flutter-fullstack" data-category="software">Full-Stack Web Developer - Flutter (Software)</option>
+                  
+                    <option value="sw-mern-fullstack" data-category="software">Full-Stack Web Developer - MERN (Software)</option>
+                  
+                    <option value="sw-ai-datascience" data-category="software">Master Diploma in AI And Data Science (Software)</option>
+                  
+                    <option value="sw-uiux-designing" data-category="software">Advanced Diploma in UI/UX Designing (Software)</option>
+                  
+                    <option value="sw-generative-ai" data-category="software">Certificate Course In Generative AI (Software)</option>
+                  
+                    <option value="sw-office-automation" data-category="software">Diploma in Office Automation (Software)</option>
+                  
+                    <option value="mm-graphic-designing" data-category="multimedia">Diploma In Graphic Designing (Multimedia)</option>
+                  
+                    <option value="mm-video-editing" data-category="multimedia">Diploma In Video Editing (Multimedia)</option>
+                  
+                    <option value="mm-motion-graphics" data-category="multimedia">Professional Diploma in Motion Graphics (Multimedia)</option>
+                  
+                    <option value="mm-digital-marketing" data-category="multimedia">Professional Diploma in Digital Marketing (Multimedia)</option>
+                  
+                    <option value="mm-3ds-max" data-category="multimedia">Certificate Course in 3DS MAX (Multimedia)</option>
+                  
+                    <option value="mm-blender" data-category="multimedia">Certificate Course in Blender (Multimedia)</option>
+                  
+                    <option value="acc-tally-essential" data-category="accounting">G-Accountant - Tally Essential Comprehensive (Accounting)</option>
+                  
+                    <option value="acc-sap-fico" data-category="accounting">Certificate in SAP Finance and Control (S/4 HANA) (Accounting)</option>
+                  
+                    <option value="acc-sap-mm" data-category="accounting">Certificate in SAP Material Management (S/4 HANA) (Accounting)</option>
+                  
+                    <option value="acc-sap-hcm" data-category="accounting">Certificate in SAP Human Capital Management (SAP S/4 HANA) (Accounting)</option>
+                  
+                    <option value="acc-sap-abap" data-category="accounting">Certificate in SAP ABAP (S/4 HANA) (Accounting)</option>
+                  
+                </select>
+                <div class="form-feedback" id="course-feedback"></div>
+              </div>
+
+              <!-- Message (Optional) -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">
+                  Your Questions or Timing Preference <span style="font-size: 0.75rem; text-transform: lowercase; color: var(--color-text-light);">(optional)</span>
+                </label>
+                <textarea 
+                  id="form-message" 
+                  name="message" 
+                  rows="3" 
+                  class="form-control" 
+                  placeholder="Let us know your current qualification, preferred batch timing (morning/evening), or questions..."
+                ></textarea>
+              </div>
+
+              <!-- Actions -->
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 2rem;">
+                <button type="submit" id="form-submit-btn" class="btn btn-primary" style="width: 100%;">
+                  <span>Submit Course Enquiry</span>
+                </button>
+
+                <button type="button" id="form-whatsapp-btn" class="btn btn-whatsapp" style="width: 100%;">
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+
+              <!-- Submission Feedback Notice -->
+              <div id="form-status-box" style="display: none; margin-top: 1.5rem; padding: 1rem 1.25rem; border-radius: 6px; font-size: 0.88rem; line-height: 1.5;"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  
+  
+    <section class="section section-white border-t-subtle" id="contact" aria-label="Contact and Location Details">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="reveal-item" style="margin-bottom: 3.5rem;">
+          <div style="margin-bottom: 1rem;">
+            <span class="editorial-tag">Connect With Us</span>
+          </div>
+          <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.05; margin-bottom: 1rem;">
+            VISIT OUR CENTRE.
+          </h2>
+          <p style="color: var(--color-text-secondary); max-width: 620px; font-size: 1.05rem; line-height: 1.65;">
+            Conveniently situated at JRJ Complex on Thozhupadam–Ottappalam Road. Visit us for one-on-one academic counselling, lab walkthroughs, and course enrollment.
+          </p>
+        </div>
+
+        <!-- Contact Grid -->
+        <div class="contact-grid">
+          
+          <!-- Contact Detail Cards -->
+          <div class="contact-card-list reveal-item">
+            
+            <!-- Address Card -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-light); display: block; margin-bottom: 0.25rem;">
+                  Campus Address
+                </span>
+                <strong style="font-size: 1.05rem; color: var(--color-text-primary); display: block; margin-bottom: 0.4rem;">
+                  G-TEC Education, Ottappalam
+                </strong>
+                <address style="font-style: normal; font-size: 0.92rem; color: var(--color-text-secondary); line-height: 1.6;">
+                  Second Floor, JRJ Complex<br />
+                  Thozhupadam–Ottappalam Road<br />
+                  Ottappalam, Kerala 679101, India
+                </address>
+                <div style="margin-top: 0.85rem;">
+                  <a href="https://maps.app.goo.gl/fbnyT27gH3FD3fjV9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Get directions to G-TEC Ottappalam on Google Maps">
+                    <span>Get Directions &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Telephone Card -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-light); display: block; margin-bottom: 0.25rem;">
+                  Official Telephone
+                </span>
+                <strong style="font-size: 1.15rem; color: var(--color-text-primary); display: block; margin-bottom: 0.35rem;">
+                  <a href="tel:+919995955501" style="color: var(--color-text-primary); text-decoration: none;">
+                    +91 99959 55501
+                  </a>
+                </strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                  Direct phone inquiries: Monday – Saturday, 8:30 AM – 6:30 PM IST
+                </p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box" style="background-color: #E8F8EE; color: #25D366;" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.12-.533-1.821-.756-2.986-2.614-3.076-2.735-.09-.12-0.739-.983-.739-1.874 0-.891.468-1.328.635-1.507.167-.179.366-.224.488-.224.122 0 .245.002.35.008.113.006.262-.042.411.314.155.371.531 1.296.577 1.39.046.094.077.204.015.327-.061.123-.092.199-.183.307-.091.107-.193.24-.276.323-.092.092-.188.193-.081.378.107.184.475.786 1.021 1.272.703.627 1.296.822 1.48.914.184.092.292.077.4-.046.108-.123.461-.537.584-.722.123-.184.246-.154.414-.092.169.062 1.07.505 1.254.597.184.092.307.138.353.215.046.077.046.447-.098.852z"/>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-light); display: block; margin-bottom: 0.25rem;">
+                  WhatsApp Helpdesk
+                </span>
+                <strong style="font-size: 1.15rem; color: var(--color-text-primary); display: block; margin-bottom: 0.35rem;">
+                  <a href="https://wa.me/916238843939" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: none;">
+                    +91 62388 43939
+                  </a>
+                </strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                  Fast messaging for course syllabus, fees, and syllabus brochures
+                </p>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-light); display: block; margin-bottom: 0.25rem;">
+                  Official Email
+                </span>
+                <strong style="font-size: 1.05rem; color: var(--color-text-primary); display: block; margin-bottom: 0.35rem;">
+                  <a href="mailto:ottappalam.pkd@gteceducation.com" style="color: var(--color-text-primary); text-decoration: none;">
+                    ottappalam.pkd@gteceducation.com
+                  </a>
+                </strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                  For institutional communications, verification, and corporate inquiries
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div style="display: flex; gap: 1rem; align-items: center; padding-top: 0.5rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-light);">
+                Follow Us:
+              </span>
+              <a href="https://www.instagram.com/gtecottapalam/?hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Visit G-TEC Ottappalam on Instagram">
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/gtecotp/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="Visit G-TEC Ottappalam on Facebook">
+                Facebook
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Interactive Google Maps Frame -->
+          <div class="contact-map-frame reveal-item" style="transition-delay: 0.15s;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.824287848695!2d76.3762886!3d10.7711467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d56e9c6806ef%3A0xebe76214041b3117!2sG-TEC%20EDUCATION%20OTTAPALAM!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" 
+              title="Google Map location of G-TEC Education Ottappalam at JRJ Complex"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  
+</main>
+
+    <footer class="site-footer" id="footer" aria-label="Site Footer">
+      <div class="container">
+        
+        <div class="footer-grid">
+          
+          <!-- Column 1: Brand & Identity -->
+          <div class="footer-col">
+            <a href="#hero" style="display: inline-block; margin-bottom: 1.5rem;" aria-label="G-TEC Ottappalam Home">
+              <img 
+                src="./images/brand/gtec-logo-white.png" 
+                alt="G-TEC Education Ottappalam Logo" 
+                style="height: 52px; width: auto;"
+                width="200" 
+                height="52"
+              />
+            </a>
+            <p style="color: #94A3B8; font-size: 0.92rem; line-height: 1.65; margin-bottom: 1.5rem;">
+              Centre of excellence for software development, architectural CAD, creative multimedia, and corporate accounting education in Ottappalam, Kerala.
+            </p>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="https://www.instagram.com/gtecottapalam/?hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);" aria-label="G-TEC Ottappalam on Instagram">
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/gtecotp/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);" aria-label="G-TEC Ottappalam on Facebook">
+                Facebook
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2 Streams -->
+          <div class="footer-col">
+            <h5>Disciplines</h5>
+            <ul class="footer-links">
+              
+                <li>
+                  <a href="#courses" class="footer-link" onclick="window.selectCourseCategory('cad')">
+                    CAD & Engineering Design
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#courses" class="footer-link" onclick="window.selectCourseCategory('software')">
+                    Software Development & Computing
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#courses" class="footer-link" onclick="window.selectCourseCategory('multimedia')">
+                    Multimedia & Visual Arts
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#courses" class="footer-link" onclick="window.selectCourseCategory('accounting')">
+                    Accounting & Business Management
+                  </a>
+                </li>
+              
+              <li>
+                <a href="https://www.gteceducation.com/courses/software" target="_blank" rel="noopener noreferrer" class="footer-link">
+                  Official Global Catalogue &rarr;
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Fast Navigation -->
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#hero" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About Ottappalam Centre</a></li>
+              <li><a href="#courses" class="footer-link">Verified Courses</a></li>
+              <li><a href="#campus" class="footer-link">Campus Facilities</a></li>
+              <li><a href="#gallery" class="footer-link">Student Work</a></li>
+              <li><a href="#enquiry" class="footer-link">Admissions Enquiry</a></li>
+              <li><a href="#contact" class="footer-link">Location & Map</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Centre Contact -->
+          <div class="footer-col">
+            <h5>Ottappalam Centre</h5>
+            <address style="font-style: normal; color: #CBD5E1; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+              Second Floor, JRJ Complex,<br />
+              Thozhupadam–Ottappalam Road,<br />
+              Ottappalam, Kerala 679101, India.
+            </address>
+            <div style="font-size: 0.9rem; color: #CBD5E1; display: flex; flex-direction: column; gap: 0.4rem;">
+              <div>Tel: <a href="tel:+919995955501" style="color: #FFFFFF; text-decoration: none; font-weight: 700;">+91 99959 55501</a></div>
+              <div>WhatsApp: <a href="https://wa.me/916238843939" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: none; font-weight: 700;">+91 62388 43939</a></div>
+              <div>Email: <a href="mailto:ottappalam.pkd@gteceducation.com" style="color: #FFFFFF; text-decoration: none;">ottappalam.pkd@gteceducation.com</a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer Bottom Legal Notice -->
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 G-TEC Education, Ottappalam. All rights reserved.
+          </div>
+          <div style="max-width: 600px; text-align: right;">
+            Course offerings and syllabus information are verified against official G-TEC Education standards. All trademarks, logos and certifications belong to their respective holders.
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  
+
+    <dialog id="course-detail-dialog" class="course-modal" aria-labelledby="modal-course-title">
+      <div class="modal-header">
+        <div>
+          <span id="modal-course-level" class="course-level-badge">Diploma Course</span>
+          <h3 id="modal-course-title" style="font-size: clamp(1.4rem, 2.5vw, 1.85rem); line-height: 1.2; color: var(--color-text-primary);">
+            Course Title
+          </h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-button" aria-label="Close course details">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-course-content">
+        <!-- Content will be injected dynamically -->
+      </div>
+
+      <div class="modal-footer">
+        <a id="modal-official-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-sm">
+          <span>Official G-TEC Source &rarr;</span>
+        </a>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a id="modal-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.12-.533-1.821-.756-2.986-2.614-3.076-2.735-.09-.12-0.739-.983-.739-1.874 0-.891.468-1.328.635-1.507.167-.179.366-.224.488-.224.122 0 .245.002.35.008.113.006.262-.042.411.314.155.371.531 1.296.577 1.39.046.094.077.204.015.327-.061.123-.092.199-.183.307-.091.107-.193.24-.276.323-.092.092-.188.193-.081.378.107.184.475.786 1.021 1.272.703.627 1.296.822 1.48.914.184.092.292.077.4-.046.108-.123.461-.537.584-.722.123-.184.246-.154.414-.092.169.062 1.07.505 1.254.597.184.092.307.138.353.215.046.077.046.447-.098.852z"/>
+            </svg>
+            <span>WhatsApp Enquiry</span>
+          </a>
+
+          <button type="button" id="modal-enquire-btn" class="btn btn-primary btn-sm">
+            Enquire About This Course
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </div>
 
   <!-- Fallback for JavaScript disabled browsers -->
   <noscript>
